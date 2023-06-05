@@ -18,7 +18,7 @@
 
 #define DEFAULT 0
 #define LOWER  1
-#define RAISER  2
+#define RAISE  2
 #define GAMING  3
 #define TVP1 4
 #define TVP2 5
@@ -84,7 +84,7 @@ label= "DEFAULT"                           ;
     &kp Q       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &kp LGUI  &mo 1         &kp SPACE       &kp RET     &mo 2       &kp RALT
                                      // &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET     &lt SYM ESC &kp BSPC ---------------OLD
-                                        &kp LGUI  &lt 1 TAB     &kp SPACE       &kp RET     &mo 1 ESC   &kp RALT
+                                        &kp LGUI  &lt 1 TAB     &kp SPACE       &kp RET     &lt 2 ESC   &kp RALT
                         >;
                 };
 
