@@ -16,7 +16,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define DEFAULT 0
+#define BASE 0
 #define LOWER 1
 #define RAISE 2
 #define GAMING 3
@@ -51,9 +51,9 @@
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-                default_layer {
+                base_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "DEFAULT"                           ;
+label= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
@@ -67,10 +67,10 @@ label= "DEFAULT"                           ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &mo 4 P
+                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &lt 4 P
                 &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp H       &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SQT
     &trans      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &tog GAMING
-                                        &kp LGUI    &mo 1 TAB   &kp SPACE       &kp RET     &mo 2 ESC   &kp BSPC
+                                        &kp LGUI    &lt 1 TAB   &kp SPACE       &kp RET     &lt 2 ESC   &kp BSPC
                         >;
                 };
 
@@ -93,9 +93,9 @@ label= "LOWER"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5         &kp N6     &kp N7      &kp N8      &kp N9       &kp N0      
-                   &kp EXCL    &mt LALT AT  &mt LCTRL HASH    &mt LSHFT DOLLAR  &kp PERCENT   &mt RSHFT CARET &mt RCTRL AMPERSAND  &mt RALT ASTERISK   &kp LPAR  &kp RPAR      
+                   &kp EXCL    &mt LALT AT  &mt LCTRL HASH    &mt LSHFT DOLLAR  &kp PERCENT  &mt RSHFT CARET  &mt RCTRL AMPERSAND  &mt RALT ASTERISK   &kp LPAR  &kp RPAR      
       &kp MINUS    &kp EQUAL   &kp LBKT    &kp RBKT    &kp BLSH    &kp SEMI       &kp COMMA  &kp DOT     &kp SQT     &kp TILDE    &kp SLASH   &trans
-                                           &kp LGUI    &kp TAB     &kp SPACE         &kp RET    &kp ESC     &kp BSPC
+                                           &kp LGUI    &kp TAB     &kp SPACE      &kp RET    &kp ESC     &kp BSPC
                         >;
                 };
                 
@@ -122,7 +122,7 @@ label= "RAISE"                             ;
                 &kp F1      &kp F2      &kp F3       &kp F4      &kp F5          &kp F6       &kp F7     &kp F8      &kp F9       &kp F10       
                 &kp F11     &kp F12     &trans       &trans      &trans          &trans       &trans     &trans      &trans       &trans
     &trans      &trans      &trans      &trans       &trans      &trans          &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &kp C_MUTE   &trans         
-                                        &kp LGUI    &kp TAB     &kp SPACE         &kp RET    &kp ESC     &kp BSPC      
+                                        &kp LGUI    &kp TAB     &kp SPACE        &kp RET      &kp ESC    &kp BSPC      
                         >;
                 };
 
@@ -156,7 +156,27 @@ label= "GAMING"                            ;
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-
+                bt_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "BT"                                ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃     UP    ┃           ┃           ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    LEFT   ┃    DOWN   ┃   RIGHT   ┃           ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃   BTCLR   ┃    BT1    ┃    BT2    ┃    BT3    ┃    BT4    ┃     BT5   ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃   GUI     ┃    TAB    ┃    SPC    ┃   ┃    ENT    ┃     ESC   ┃   BSPC    ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+               &trans        &trans        &trans        &trans        &trans        &trans     &trans      & UP        &trans      &trans      
+               &trans        &trans        &trans        &trans        &trans        &trans     &kp LEFT    &kp DOWN    &kp RIGHT   &trans      
+   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans     &trans      &trans      &trans      &trans     &trans 
+                                        &kp LGUI    &kp TAB     &kp SPACE            &kp RET    &kp ESC     &kp BSPC
+                        >;
+                };
 
                 
                
