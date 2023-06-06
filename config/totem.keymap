@@ -102,14 +102,14 @@ label= "LOWER"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃   BTCLR   ┃    BT1    ┃    BT2    ┃    BT3    ┃    BT4    ┃     BT5   ┃   ┃   LEFT    ┃   DOWN    ┃     UP    ┃   RIGHT   ┃     -     ┃      =    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   GUI     ┃           ┃    SPC    ┃   ┃    ENT    ┃           ┃   ALT     ┃
+//                                     ┃   GUI     ┃    TAB    ┃    SPC    ┃   ┃    ENT    ┃           ┃   BSPC    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6    &kp N7      &kp N8      &kp N9      &kp N0      
                    &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT     &kp CARET &kp AMPERSAND  &kp ASTERISK   &kp LPAR  &kp RPAR      
-   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &kp MINUS      &kp EQUAL
-                                           &kp LGUI    &kp LSHFT    &kp SPACE      &kp RET   &trans      &kp RALT
+   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &mt LSHFT MINUS      &mt LSHFT EQUAL
+                                           &kp LGUI    &kp TAB    &kp SPACE      &kp RET   &trans      &kp BSPC
                         >;
                 };
                 
@@ -126,7 +126,7 @@ label= "RAISER"                            ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃    F11    ┃    F12    ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃ SHORTCUTS ┃           ┃           ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃    MUTE   ┃    GAME   ┃
+// ┃ SHORTCUTS ┃           ┃           ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃    MUTE   ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃    
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -135,7 +135,7 @@ label= "RAISER"                            ;
 
                 &kp F1      &kp F2      &kp F3       &kp F4      &kp F5          &kp F6       &kp F7     &kp F8      &kp F9       &kp F10       
                 &kp F11     &kp F12     &trans       &trans      &trans          &trans       &trans     &trans      &trans       &trans
-    &trans      &trans      &trans      &trans       &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp C_MUTE   &tg 3         
+    &trans      &trans      &trans      &trans       &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp C_MUTE   &trans         
                                         &trans       &trans      &trans          &trans       &trans     &trans      
                         >;
                 };
@@ -154,7 +154,7 @@ label= "GAMING"                            ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃      Q    ┃     W     ┃     E     ┃     R     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃      A    ┃     S     ┃     D     ┃     F     ┃   ┃           ┃           ┃           ┃           ┃           ┃  DEFAULT  ┃
+// ┃           ┃           ┃      A    ┃     S     ┃     D     ┃     F     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃   SPACE   ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -163,7 +163,7 @@ label= "GAMING"                            ;
 
                 &trans      &kp N1      &kp N2      &kp N3      &kp N4          &trans      &trans      &trans      &trans      &trans
                 &trans      &kp Q       &kp W       &kp E       &kp R           &trans      &trans      &trans      &trans      &trans  
-    &trans      &trans      &kp A       &kp S       &kp D       &kp F           &trans      &trans      &trans      &trans      &trans      &tg 3         
+    &trans      &trans      &kp A       &kp S       &kp D       &kp F           &trans      &trans      &trans      &trans      &trans      &trans         
                                         &trans      &trans      &kp SPACE       &trans      &trans      &trans      
                         >;
                 };
