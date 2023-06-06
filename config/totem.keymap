@@ -80,8 +80,8 @@ label= "DEFAULT"                           ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &mo BT P
-                &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F &kp G           &kp H       &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SQT
+                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &mo 4 P
+                &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G           &kp H       &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SQT
     &trans      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &tog GAMING
                                         &kp LGUI    &mo 1 TAB   &kp SPACE       &kp RET     &mo 2 ESC   &kp BSPC
                         >;
