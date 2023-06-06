@@ -72,19 +72,19 @@ label= "DEFAULT"                           ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     '     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    GAME   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     ~     ┃   BSPC    ┃
+// ┃           ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     ~     ┃    GAME   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   LGUI    ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃    ESC    ┃    RALT   ┃
+//                                     ┃   LGUI    ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃    ESC    ┃    BSPC   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI SQT
-    &trans      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp TILDE   &kp BSPC
+    &trans      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp TILDE   &tg 3
                                         &kp LGUI  &mo 1         &kp SPACE       &kp RET     &mo 2       &kp RALT
                                      // &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET     &lt SYM ESC &kp BSPC ---------------OLD
-                                        &kp LGUI  &lt 1 TAB     &kp SPACE       &kp RET     &lt 2 ESC   &kp RALT
+                                        &kp LGUI  &lt 1 TAB     &kp SPACE       &kp RET     &lt 2 ESC   &kp BSPC
                         >;
                 };
 
@@ -98,7 +98,7 @@ label= "LOWER"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     1     ┃     2     ┃     3     ┃     4     ┃    5      ┃   ┃     6     ┃     7     ┃     8     ┃     9     ┃     0     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     !     ┃     @     ┃     #     ┃      $    ┃      %    ┃   ┃     ^     ┃      &    ┃     *     ┃      (    ┃     )     ┃
+//             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ^     ┃      &    ┃     *     ┃      (    ┃     )     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃   BTCLR   ┃    BT1    ┃    BT2    ┃    BT3    ┃    BT4    ┃     BT5   ┃   ┃   LEFT    ┃   DOWN    ┃     UP    ┃   RIGHT   ┃     -     ┃      =    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -135,7 +135,7 @@ label= "RAISER"                            ;
 
                 &kp F1      &kp F2      &kp F3       &kp F4      &kp F5          &kp F6       &kp F7     &kp F8      &kp F9       &kp F10       
                 &kp F11     &kp F12     &trans       &trans      &trans          &trans       &trans     &trans      &trans       &trans
-    &trans      &trans      &trans      &trans       &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp C_MUTE   &mo 3         
+    &trans      &trans      &trans      &trans       &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp C_MUTE   &tg 3         
                                         &trans       &trans      &trans          &trans       &trans     &trans      
                         >;
                 };
@@ -163,7 +163,7 @@ label= "GAMING"                            ;
 
                 &trans      &kp N1      &kp N2      &kp N3      &kp N4          &trans      &trans      &trans      &trans      &trans
                 &trans      &kp Q       &kp W       &kp E       &kp R           &trans      &trans      &trans      &trans      &trans  
-    &trans      &trans      &kp A       &kp S       &kp D       &kp F           &trans      &trans      &trans      &trans      &trans      &mo 1         
+    &trans      &trans      &kp A       &kp S       &kp D       &kp F           &trans      &trans      &trans      &trans      &trans      &tg 3         
                                         &trans      &trans      &kp SPACE       &trans      &trans      &trans      
                         >;
                 };
