@@ -20,8 +20,9 @@
 #define LOWER 1
 #define RAISE 2
 #define GAMING 3
-#define TVP1 4
-#define TVP2 5
+#define BT 4
+#define TVP1 5
+#define TVP2 6
 
 &mt {
   quick-tap-ms = <100>;
@@ -72,19 +73,17 @@ label= "DEFAULT"                           ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     '     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     ~     ┃    GAME   ┃
+// ┃           ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃    /      ┃    GAME   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   LGUI    ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃    ESC    ┃    BSPC   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
+                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &mo BT P
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI SQT
-    &trans      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp TILDE   &tog GAMING
-                                        &kp LGUI  &mo 1         &kp SPACE       &kp RET     &mo 2       &kp RALT
-                                     // &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET     &lt SYM ESC &kp BSPC ---------------OLD
-                                        &kp LGUI  &lt 1 TAB     &kp SPACE       &kp RET     &lt 2 ESC   &kp BSPC
+    &trans      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &tog GAMING
+                                        &kp LGUI    &mo 1 TAB   &kp SPACE       &kp RET     &mo 2 ESC   &kp BSPC
                         >;
                 };
 
@@ -100,16 +99,16 @@ label= "LOWER"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ^     ┃      &    ┃     *     ┃      (    ┃     )     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃   BTCLR   ┃    BT1    ┃    BT2    ┃    BT3    ┃    BT4    ┃     BT5   ┃   ┃   LEFT    ┃   DOWN    ┃     UP    ┃   RIGHT   ┃     -     ┃      =    ┃
+// ┃     -     ┃     =     ┃     [     ┃     ]     ┃    \      ┃     ;     ┃   ┃     ,     ┃      .    ┃    '      ┃     ~     ┃      /    ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   GUI     ┃    TAB    ┃    SPC    ┃   ┃    ENT    ┃           ┃   BSPC    ┃
+//                                     ┃   GUI     ┃    TAB    ┃    SPC    ┃   ┃    ENT    ┃     ESC   ┃   BSPC    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6    &kp N7      &kp N8      &kp N9      &kp N0      
-                   &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT     &kp CARET &kp AMPERSAND  &kp ASTERISK   &kp LPAR  &kp RPAR      
-   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &mt LSHFT MINUS      &mt LSHFT EQUAL
-                                           &kp LGUI    &kp TAB    &kp SPACE      &kp RET   &trans      &kp BSPC
+                   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6    &kp N7      &kp N8      &kp N9       &kp N0      
+                   &kp EXCL    &mt LALT AT &mt LCTRL HASH    &mt LSHFT DOLLAR  &kp PERCENT   &mt RSHFT CARET &mt RCTRL AMPERSAND  &mt RALT ASTERISK   &kp LPAR  &kp RPAR      
+      &kp MINUS    &kp EQUAL   &kp LBKT    &kp RBKT    &kp BLSH    &kp SEMI        &kp COMMA &kp DOT     &kp SQT     &kp TILDE    &kp SLASH
+                                           &kp LGUI    &mo 1 TAB   &kp SPACE       &kp RET   &mo 2 ESC   &kp BSPC
                         >;
                 };
                 
@@ -119,7 +118,7 @@ label= "LOWER"                              ;
 
                 raise_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "RAISER"                            ;
+label= "RAISE"                             ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     F1    ┃     F2    ┃     F3    ┃     F4    ┃     F5    ┃   ┃     F6    ┃     F7    ┃     F8    ┃     F9    ┃     F10   ┃
@@ -128,7 +127,7 @@ label= "RAISER"                            ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃ SHORTCUTS ┃           ┃           ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃    MUTE   ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃    
+//                                     ┃    GUI    ┃    TAB    ┃   SPACE   ┃   ┃    RET    ┃    ESC    ┃   BSPC    ┃    
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -136,7 +135,7 @@ label= "RAISER"                            ;
                 &kp F1      &kp F2      &kp F3       &kp F4      &kp F5          &kp F6       &kp F7     &kp F8      &kp F9       &kp F10       
                 &kp F11     &kp F12     &trans       &trans      &trans          &trans       &trans     &trans      &trans       &trans
     &trans      &trans      &trans      &trans       &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp C_MUTE   &trans         
-                                        &trans       &trans      &trans          &trans       &trans     &trans      
+                                        &kp LGUI     &mo 1 TAB   &kp SPACE       &kp RET      &mo 2 ESC  &kp BSPC      
                         >;
                 };
 
@@ -150,26 +149,51 @@ label= "RAISER"                            ;
 label= "GAMING"                            ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃     1     ┃     2     ┃      3    ┃     4     ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┃    TAB    ┃     1     ┃     2     ┃      3    ┃     4     ┃   ┃   SPRAY   ┃           ┃           ┃           ┃    ESC    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃      Q    ┃     W     ┃     E     ┃     R     ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┃   SHIFT   ┃      Q    ┃     W     ┃     E     ┃     R     ┃   ┃     G     ┃           ┃           ┃           ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃      A    ┃     S     ┃     D     ┃     F     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┃     X     ┃  CONTROL  ┃      A    ┃     S     ┃     D     ┃     F     ┃   ┃     B     ┃           ┃           ┃           ┃           ┃  DEFAULT  ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃   SPACE   ┃   ┃           ┃           ┃           ┃
+//                                     ┃     Z     ┃     X     ┃   SPACE   ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &kp N1      &kp N2      &kp N3      &kp N4          &trans      &trans      &trans      &trans      &trans
-                &trans      &kp Q       &kp W       &kp E       &kp R           &trans      &trans      &trans      &trans      &trans  
-    &trans      &trans      &kp A       &kp S       &kp D       &kp F           &trans      &trans      &trans      &trans      &trans      &tog GAMING         
-                                        &trans      &trans      &kp SPACE       &trans      &trans      &trans      
+                &kp TAB      &kp N1      &kp N2      &kp N3      &kp N4          &kp T      &trans      &trans      &trans      &kp ESC
+                &kp LSHFT    &kp Q       &kp W       &kp E       &kp R           &kp G      &trans      &trans      &trans      &trans  
+    &kp X       &kp LCTRL     &kp A      &kp S       &kp D       &kp F           &kp B      &trans      &trans      &trans      &trans      &tog GAMING         
+                                         &kp Z       &kp C       &kp SPACE       &trans     &trans      &trans      
                         >;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+
+                bt_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "BT"                              ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃     UP    ┃           ┃           ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    LEFT   ┃    DOWN   ┃   RIGHT   ┃           ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃   BTCLR   ┃    BT1    ┃    BT2    ┃    BT3    ┃    BT4    ┃     BT5   ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃   GUI     ┃    TAB    ┃    SPC    ┃   ┃    ENT    ┃     ESC   ┃   BSPC    ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+                   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6    &kp N7      &kp N8      &kp N9      &kp N0      
+                   &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT     &kp CARET &kp AMPERSAND  &kp ASTERISK   &kp LPAR  &kp RPAR      
+   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &mt LSHFT MINUS      &mt LSHFT EQUAL
+                                           &kp LGUI    &mo 1 TAB   &kp SPACE       &kp RET   &mo 2 ESC   &kp BSPC
+                        >;
+                };
+                
+               
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
                 tvp1_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
