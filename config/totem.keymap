@@ -161,10 +161,10 @@ label= "GAMING"                            ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &kp N1      &kp N2      &kp N3      &kp N4          &trans      &trans      &trans      &trans      &trans
-                &trans      &kp Q       &kp W       &kp E       &kp R           &trans      &trans      &trans      &trans      &trans  
-    &trans      &trans      &kp A       &kp S       &kp D       &kp F           &trans      &trans      &trans      &trans      &trans      &tog GAMING         
-                                        &trans      &trans      &kp SPACE       &trans      &trans      &trans      
+                &kp TAB      &kp N1      &kp N2      &kp N3      &kp N4          &kp T      &trans      &trans      &trans      &kp ESC
+                &kp LSHFT    &kp Q       &kp W       &kp E       &kp R           &kp G      &trans      &trans      &trans      &trans  
+    &kp X       &kp LCTRL    &kp A       &kp S       &kp D       &kp F           &kp B      &trans      &trans      &trans      &trans      &tog GAMING         
+                                         &kp Z       &kp C       &kp SPACE       &trans     &trans      &trans      
                         >;
                 };
 
