@@ -163,9 +163,9 @@ label= "GAMING"                            ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp TAB      &kp N1      &kp N2      &kp N3      &kp N4          &kp T      &trans      &trans      &trans      &kp ESC
-                &kp LSHFT    &kp Q       &kp W       &kp E       &kp R           &kp G      &trans      &trans      &trans      &trans  
+                &kp LSHFT    &kp Q       &kp W       &kp E       &kp R           &kp G      &trans      &trans      &kp F5      &kp F6  
     &kp X       &kp LCTRL    &kp A       &kp S       &kp D       &kp F           &kp B      &trans      &trans      &trans      &trans      &tog GAMING         
-                                         &kp Z       &kp C       &kp SPACE       &trans     &trans      &trans      
+                                         &kp Z       &kp C       &kp SPACE       &kp RET     &trans      &trans      
                         >;
                 };
 
