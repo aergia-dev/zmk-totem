@@ -153,19 +153,19 @@ label= "GAMING"                            ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃    TAB    ┃     1     ┃     2     ┃      3    ┃     4     ┃   ┃   SPRAY   ┃           ┃           ┃           ┃    ESC    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃   SHIFT   ┃      A    ┃     W     ┃     D     ┃     R     ┃   ┃     G     ┃           ┃           ┃     F5    ┃     F6    ┃
+//             ┃   SHIFT   ┃      Q    ┃     W     ┃     E     ┃     R     ┃   ┃     G     ┃           ┃           ┃     F5    ┃     F6    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃     T     ┃  CONTROL  ┃      Q    ┃     S     ┃     E     ┃     F     ┃   ┃     B     ┃           ┃           ┃           ┃           ┃    TOG    ┃
+// ┃     T     ┃  CONTROL  ┃      A    ┃     S     ┃     D     ┃     F     ┃   ┃     B     ┃           ┃           ┃           ┃           ┃    TOG    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃     X     ┃     C     ┃   SPACE   ┃   ┃   ENTER   ┃           ┃           ┃
+//                                     ┃    ALT    ┃     C     ┃   SPACE   ┃   ┃   ENTER   ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp TAB      &kp N1      &kp N2      &kp N3      &kp N4          &kp T      &trans      &trans      &trans      &kp ESC
-                &kp LSHFT    &kp A       &kp W       &kp D       &kp R           &kp G      &trans      &trans      &kp F5      &kp F6  
-    &kp T       &kp LCTRL    &kp Q       &kp S       &kp E       &kp F           &kp B      &trans      &trans      &trans      &trans      &tog GAMING         
-                                         &kp X       &kp C       &kp SPACE       &kp RET     &trans      &trans      
+                &kp LSHFT    &kp Q       &kp W       &kp E       &kp R           &kp G      &trans      &trans      &kp F5      &kp F6  
+    &kp T       &kp LCTRL    &kp A       &kp S       &kp D       &kp F           &kp B      &trans      &trans      &trans      &trans      &tog GAMING         
+                                         &kp LALT    &kp C       &kp SPACE       &kp RET     &trans      &trans      
                         >;
                 };
 
